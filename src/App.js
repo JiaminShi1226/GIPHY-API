@@ -1,10 +1,10 @@
 import "./App.css";
-import GiftCard from "./components/GiftCard";
+import GifAPI from "./components/GifAPI";
 
 function App() {
   return (
     <div className="App">
-      <GiftCard />
+      <GifAPI />
     </div>
   );
 }

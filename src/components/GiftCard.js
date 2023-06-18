@@ -1,9 +1,12 @@
 import React from "react";
-import SearchField from "./SearchField";
 
-//presentational component receiving GIF info as props
-const GiftCard = () => {
-  return <div>GiftCard</div>;
+const GiftCard = ({ gif }) => {
+  return (
+    <div className="card">
+      <p className="title">{gif.title}</p>
+      <img src={gif.images.fixed_height_small.url} alt={gif.title} />
+    </div>
+  );
 };
 
 export default GiftCard;
