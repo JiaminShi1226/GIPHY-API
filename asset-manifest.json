@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GIPHY-API/static/css/main.a9282ca6.css",
+    "main.js": "/GIPHY-API/static/js/main.7538dddd.js",
+    "static/js/787.766d6fdf.chunk.js": "/GIPHY-API/static/js/787.766d6fdf.chunk.js",
+    "index.html": "/GIPHY-API/index.html",
+    "main.a9282ca6.css.map": "/GIPHY-API/static/css/main.a9282ca6.css.map",
+    "main.7538dddd.js.map": "/GIPHY-API/static/js/main.7538dddd.js.map",
+    "787.766d6fdf.chunk.js.map": "/GIPHY-API/static/js/787.766d6fdf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9282ca6.css",
+    "static/js/main.7538dddd.js"
+  ]
+}
