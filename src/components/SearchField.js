@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import GiftCard from "./GiftCard";
 
 // Component with a search field input
-const SearchField = ({ getRegular, getRandom }) => {
+const SearchField = ({ getRegular, getRandom, gifs }) => {
   const [search, setSearch] = useState("");
 
   // Function to handle form submission
@@ -24,6 +25,14 @@ const SearchField = ({ getRegular, getRandom }) => {
           Random
         </button>
       </form>
+      {/* Render the GiftCard components for each GIF */}
+      <div className="gif-grid">
+        {gifs.length > 0 ? (
+          gifs.map((gif) => <GiftCard key={gif.id} gif={gif} />)
+        ) : (
+          <p>No GIFs found</p>
+        )}
+      </div>
     </div>
   );
 };
