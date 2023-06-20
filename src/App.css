@@ -108,3 +108,44 @@ footer {
   color: white;
   text-align: center;
 }
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.select-wrapper select.filters {
+  padding: 8px 40px 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid #666;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  pointer-events: none;
+}
+
+.select-wrapper:hover::after {
+  border-top-color: #333;
+}
+
+.select-wrapper select.filters option {
+  padding: 8px;
+  font-size: 14px;
+}

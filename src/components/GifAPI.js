@@ -11,9 +11,10 @@ const GifAPI = () => {
   }, []);
 
   // Function to fetch GIFs based on search term
-  async function getRegular(search) {
+  async function getRegular(search, rating) {
     try {
-      const URL = `https://api.giphy.com/v1/gifs/search?q=${search}&api_key=lKQjpt2zMkC8zScYDmxx7GJlIn3Qsh8K`;
+      const ratingQuery = rating ? `&rating=${rating}` : "";
+      const URL = `https://api.giphy.com/v1/gifs/search?q=${search}${ratingQuery}&api_key=lKQjpt2zMkC8zScYDmxx7GJlIn3Qsh8K`;
       const response = await axios.get(URL);
 
       // The first data represents the data property of the Axios response object, and the second data represents the data field in the GIPHY API response data object.
